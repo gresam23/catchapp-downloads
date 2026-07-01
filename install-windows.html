@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Install CatchApp on Windows</title>
+<style>
+  :root{--ink:#1a2233;--muted:#5b6577;--line:#e6e9f0;--bg:#f6f8fc;--blue:#1f6feb;--blueDk:#0a3a8a;
+    --card:#fff;--shadow:0 1px 3px rgba(20,30,60,.06),0 8px 24px rgba(20,30,60,.05);}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font:17px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;}
+  .wrap{max-width:760px;margin:0 auto;padding:36px 20px 80px}
+  header.top{background:linear-gradient(135deg,var(--blue),var(--blueDk));color:#fff;
+    border-radius:16px;padding:26px 30px;box-shadow:var(--shadow)}
+  header.top h1{margin:0 0 4px;font-size:1.7rem}
+  header.top p{margin:0;opacity:.92}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:14px;
+    padding:20px 24px;margin:18px 0;box-shadow:var(--shadow)}
+  h2{font-size:1.15rem;margin:.2rem 0 .6rem}
+  ol.steps{counter-reset:s;list-style:none;padding:0;margin:.4rem 0}
+  ol.steps li{position:relative;padding:12px 0 12px 46px;border-bottom:1px dashed var(--line)}
+  ol.steps li:last-child{border-bottom:none}
+  ol.steps li:before{counter-increment:s;content:counter(s);position:absolute;left:0;top:11px;
+    width:32px;height:32px;border-radius:50%;background:var(--blue);color:#fff;font-weight:700;
+    display:flex;align-items:center;justify-content:center;font-size:.95rem}
+  .warn{background:#fff7e6;border:1px solid #f3d999;border-left:4px solid #b45309;
+    border-radius:10px;padding:14px 16px;color:#5a4413;margin:14px 0}
+  .warn b{color:#b45309}
+  .btn-mock{display:inline-block;background:#e7ecf5;border:1px solid #c9d3e6;border-radius:8px;
+    padding:2px 12px;font-size:.9rem;white-space:nowrap}
+  .muted{color:var(--muted);font-size:.92rem}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="top">
+  <h1>Install CatchApp on Windows</h1>
+  <p>Takes about two minutes. No technical knowledge needed.</p>
+</header>
+
+<div class="card">
+  <h2>Step-by-step</h2>
+  <ol class="steps">
+    <li><b>Download the installer.</b> Click the newest file ending in <b>.exe</b> on the
+      <a href="https://github.com/gresam23/catchapp-downloads/releases">downloads page</a>
+      (it's called something like <i>CatchApp&nbsp;Setup&nbsp;0.1.0.exe</i>). Your browser saves it to your
+      <b>Downloads</b> folder.</li>
+    <li><b>Open the file you downloaded.</b> Click it in your browser's download list, or open your Downloads
+      folder and double-click it.</li>
+    <li><b>If a blue box appears saying "Windows protected your PC" — don't worry.</b> This is a standard
+      notice for new apps that aren't yet registered with Microsoft. It appears once. See the picture guide below.</li>
+    <li>In that blue box, click the small <span class="btn-mock">More info</span> link.</li>
+    <li>Then click the <span class="btn-mock">Run anyway</span> button that appears.</li>
+    <li><b>That's it — the installer runs by itself.</b> After a few seconds CatchApp opens in its own window,
+      and you'll find a <b>CatchApp</b> icon on your desktop and in the Start menu.</li>
+  </ol>
+</div>
+
+<div class="card">
+  <h2>About the blue "Windows protected your PC" notice</h2>
+  <div class="warn">
+    <b>Why it appears:</b> Microsoft shows this for any new app whose maker hasn't (yet) bought a
+    Microsoft publisher certificate. It does <b>not</b> mean a virus was found. CatchApp is in its
+    testing phase, so we haven't purchased the certificate yet.
+  </div>
+  <p>The blue box has a title "Windows protected your PC" and one button: <span class="btn-mock">Don't run</span>.
+  The trick everyone misses: click the faint <b>"More info"</b> link just under the text — only then does the
+  <span class="btn-mock">Run anyway</span> button appear. Click that and you're through.</p>
+  <p class="muted">You'll only see this the first time you install. Updates install themselves quietly.</p>
+</div>
+
+<div class="card">
+  <h2>After installing</h2>
+  <p>CatchApp starts with a short setup: accept the terms, enter your activation code, and connect your
+  WhatsApp by scanning a QR code with your phone. The app walks you through each step.</p>
+  <p class="muted">No activation code? Request one via the registration form (link on the downloads page).</p>
+</div>
+
+</div>
+</body>
+</html>
