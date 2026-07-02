@@ -50,30 +50,34 @@
 <div class="card">
   <h2>Step-by-step</h2>
   <ol class="steps">
-    <li><b>Download the right Mac installer.</b> On the
-      <a href="https://github.com/gresam23/catchapp-downloads/releases">downloads page</a> there are two
-      Mac files: pick <b>…-arm64.dmg</b> if your Mac is from <b>2021 or later</b> (Apple Silicon), or
-      <b>…-x64.dmg</b> for older Intel Macs. Not sure? Click the  menu (top-left) → About This Mac:
-      "Apple M1/M2/M3/M4" means arm64; "Intel" means x64.</li>
+    <li><b>Download the Mac installer.</b> On the
+      <a href="https://github.com/gresam23/catchapp-downloads/releases">downloads page</a>, click the newest
+      file ending in <b>-arm64.dmg</b>. (CatchApp supports Macs from <b>2021 or later</b> — Apple Silicon.)</li>
     <li><b>Open the downloaded file.</b> Click it in your browser's downloads list (or find it in your
       Downloads folder and double-click). A small window opens.</li>
     <li><b>Drag the CatchApp icon onto the Applications folder</b> shown in that window. That's the "install".</li>
-    <li>Open your <b>Applications</b> folder (Finder → Applications) and find <b>CatchApp</b>.</li>
-    <li><b>Important — first launch only:</b> don't double-click. Instead, <b>hold the Control key and click</b>
-      the CatchApp icon (or right-click it), then choose <span class="btn-mock">Open</span> from the little menu.</li>
-    <li>A box appears saying the app is from an <b>"unidentified developer"</b> — click
-      <span class="btn-mock">Open</span> again. This happens once; afterwards it opens like any other app.</li>
+    <li>Open your <b>Applications</b> folder (Finder → Applications) and <b>double-click CatchApp</b>.</li>
+    <li><b>First launch only:</b> a box will say the app <b>couldn't be verified</b>. Click
+      <span class="btn-mock">Done</span> (NOT "Move to Trash").</li>
+    <li>Open <b> menu → System Settings → Privacy &amp; Security</b>, scroll down to the Security
+      section — you'll see <i>"CatchApp" was blocked to protect your Mac</i> — and click
+      <span class="btn-mock">Open Anyway</span>.</li>
+    <li>One more confirmation box appears — click <span class="btn-mock">Open Anyway</span> again
+      (your Mac may ask for your fingerprint or password). This whole dance happens <b>once</b>;
+      afterwards CatchApp opens like any other app.</li>
     <li>CatchApp opens and walks you through its own setup (terms, activation code, connecting WhatsApp).</li>
   </ol>
 </div>
 
 <div class="card">
-  <h2>About the "unidentified developer" notice</h2>
+  <h2>About the "couldn't be verified" notice</h2>
   <div class="warn">
     <b>Why it appears:</b> Apple shows this for apps whose maker hasn't (yet) enrolled in Apple's paid
     developer program. It does <b>not</b> mean a virus was found. CatchApp is in its testing phase.
-    The Control-click → Open trick is Apple's own official way to open such apps.
+    The System Settings → <b>Open Anyway</b> route is Apple's own official way to open such apps.
   </div>
+  <p class="muted">If you ever see <b>"CatchApp is damaged and can't be opened"</b> instead, you have an
+  old copy from before 2 July 2026 — delete it and download the current version, which fixes this.</p>
 </div>
 
 <div class="card">
