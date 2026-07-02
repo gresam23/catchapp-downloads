@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Install CatchApp on Mac</title>
+<style>
+  :root{--ink:#1a2233;--muted:#5b6577;--line:#e6e9f0;--bg:#f6f8fc;--blue:#1f6feb;--blueDk:#0a3a8a;
+    --card:#fff;--shadow:0 1px 3px rgba(20,30,60,.06),0 8px 24px rgba(20,30,60,.05);}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font:17px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;}
+  .wrap{max-width:760px;margin:0 auto;padding:36px 20px 80px}
+  header.top{background:linear-gradient(135deg,var(--blue),var(--blueDk));color:#fff;
+    border-radius:16px;padding:26px 30px;box-shadow:var(--shadow)}
+  header.top h1{margin:0 0 4px;font-size:1.7rem}
+  header.top p{margin:0;opacity:.92}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:14px;
+    padding:20px 24px;margin:18px 0;box-shadow:var(--shadow)}
+  h2{font-size:1.15rem;margin:.2rem 0 .6rem}
+  ol.steps{counter-reset:s;list-style:none;padding:0;margin:.4rem 0}
+  ol.steps li{position:relative;padding:12px 0 12px 46px;border-bottom:1px dashed var(--line)}
+  ol.steps li:last-child{border-bottom:none}
+  ol.steps li:before{counter-increment:s;content:counter(s);position:absolute;left:0;top:11px;
+    width:32px;height:32px;border-radius:50%;background:var(--blue);color:#fff;font-weight:700;
+    display:flex;align-items:center;justify-content:center;font-size:.95rem}
+  .warn{background:#fff7e6;border:1px solid #f3d999;border-left:4px solid #b45309;
+    border-radius:10px;padding:14px 16px;color:#5a4413;margin:14px 0}
+  .warn b{color:#b45309}
+  .btn-mock{display:inline-block;background:#e7ecf5;border:1px solid #c9d3e6;border-radius:8px;
+    padding:2px 12px;font-size:.9rem;white-space:nowrap}
+  .muted{color:var(--muted);font-size:.92rem}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="top">
+  <h1>Install CatchApp on Mac</h1>
+  <p>About three minutes. No technical knowledge needed.</p>
+</header>
+
+<div class="card">
+  <h2>Before you start</h2>
+  <p>CatchApp needs the <b>Google Chrome</b> browser installed on your Mac (it uses it quietly in the
+  background to talk to WhatsApp). If you don't have Chrome, download it first from
+  <a href="https://www.google.com/chrome/">google.com/chrome</a> — normal install, nothing special.</p>
+</div>
+
+<div class="card">
+  <h2>Step-by-step</h2>
+  <ol class="steps">
+    <li><b>Download the Mac installer.</b> On the
+      <a href="https://github.com/gresam23/catchapp-downloads/releases">downloads page</a>, click the newest
+      file ending in <b>.dmg</b> (e.g. <i>CatchApp-0.1.7-universal.dmg</i>).</li>
+    <li><b>Open the downloaded file.</b> Click it in your browser's downloads list (or find it in your
+      Downloads folder and double-click). A small window opens.</li>
+    <li><b>Drag the CatchApp icon onto the Applications folder</b> shown in that window. That's the "install".</li>
+    <li>Open your <b>Applications</b> folder (Finder → Applications) and find <b>CatchApp</b>.</li>
+    <li><b>Important — first launch only:</b> don't double-click. Instead, <b>hold the Control key and click</b>
+      the CatchApp icon (or right-click it), then choose <span class="btn-mock">Open</span> from the little menu.</li>
+    <li>A box appears saying the app is from an <b>"unidentified developer"</b> — click
+      <span class="btn-mock">Open</span> again. This happens once; afterwards it opens like any other app.</li>
+    <li>CatchApp opens and walks you through its own setup (terms, activation code, connecting WhatsApp).</li>
+  </ol>
+</div>
+
+<div class="card">
+  <h2>About the "unidentified developer" notice</h2>
+  <div class="warn">
+    <b>Why it appears:</b> Apple shows this for apps whose maker hasn't (yet) enrolled in Apple's paid
+    developer program. It does <b>not</b> mean a virus was found. CatchApp is in its testing phase.
+    The Control-click → Open trick is Apple's own official way to open such apps.
+  </div>
+</div>
+
+<div class="card">
+  <h2>Updates on Mac</h2>
+  <p class="muted">For now, Mac copies don't update themselves (that needs Apple's paid developer
+  membership, coming later). When a new version is announced, just download the new .dmg from the same
+  downloads page and drag it to Applications again — your settings and WhatsApp connection are kept.</p>
+</div>
+
+</div>
+</body>
+</html>
