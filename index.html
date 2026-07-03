@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Get CatchApp</title>
+<style>
+  :root{--ink:#1a2233;--muted:#5b6577;--line:#e6e9f0;--bg:#f6f8fc;--blue:#1f6feb;--blueDk:#0a3a8a;
+    --card:#fff;--shadow:0 1px 3px rgba(20,30,60,.06),0 8px 24px rgba(20,30,60,.05);}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font:17px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    display:flex;align-items:center;justify-content:center;min-height:100vh}
+  .wrap{max-width:520px;width:100%;padding:20px}
+  header.top{background:linear-gradient(135deg,var(--blue),var(--blueDk));color:#fff;
+    border-radius:16px;padding:30px;box-shadow:var(--shadow);text-align:center;margin-bottom:20px}
+  header.top h1{margin:0 0 6px;font-size:1.8rem}
+  header.top p{margin:0;opacity:.92}
+  .choices{display:grid;gap:14px}
+  .choice{
+    display:flex;align-items:center;gap:16px;background:var(--card);border:1.5px solid var(--line);
+    border-radius:14px;padding:20px 22px;text-decoration:none;color:var(--ink);box-shadow:var(--shadow);
+    transition:border-color .15s ease;
+  }
+  .choice:hover{border-color:var(--blue)}
+  .choice .icon{font-size:2rem;flex:0 0 auto}
+  .choice h2{margin:0 0 3px;font-size:1.1rem}
+  .choice p{margin:0;color:var(--muted);font-size:.92rem}
+  .footer{text-align:center;margin-top:22px;color:var(--muted);font-size:.9rem}
+  .footer a{color:var(--blueDk);font-weight:600}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <h1>Get CatchApp</h1>
+    <p>Pick the computer you'll install it on.</p>
+  </header>
+
+  <div class="choices">
+    <a class="choice" href="install-windows.html">
+      <span class="icon">🪟</span>
+      <span>
+        <h2>Windows PC</h2>
+        <p>Any Windows 10 or 11 computer.</p>
+      </span>
+    </a>
+    <a class="choice" href="install-mac.html">
+      <span class="icon"></span>
+      <span>
+        <h2>Mac (2021 or newer)</h2>
+        <p>Apple Silicon Macs — M1, M2, M3, or M4.</p>
+      </span>
+    </a>
+  </div>
+
+  <p class="footer">Don't have an activation code yet? <a href="https://forms.gle/9Et4trLtBJz7kJKF6" target="_blank" rel="noopener">Request access here</a></p>
+</div>
+</body>
+</html>
